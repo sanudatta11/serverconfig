@@ -47,9 +47,9 @@ sudo chmod 0777 /var/www/html
 sudo chmod 0777 /var/www/
 
 echo "Installing Evasive modules"
-sudo apt-get install libapache2-mod-evasive
-sudo apt-get install libapache2-mod-xsendfile
-sudo apt-get install libapache2-mod-log-sq
+sudo apt-get install libapache2-mod-evasive -y
+sudo apt-get install libapache2-mod-xsendfile -y
+sudo apt-get install libapache2-mod-log-sq -y
 
 sudo apt-get -y install libapache2-mod-qos
 sudo apt-get -y install libapache2-mod-spamhaus
