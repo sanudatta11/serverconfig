@@ -2,7 +2,7 @@
 echo "Updating your system"
 sudo apt-get update -y
 echo "Upgrading your System"
-Sudo apt-get upgrade -y
+sudo apt-get upgrade -y
 echo "Installing required server Packages"
 sudo apt-get install apache2 php7.0 php7.0-cli php7.0-curl php7.0-mcrypt php7.0-mysql php7.0 libapache2-mod-php -y
 sudo a2enmod rewrite
