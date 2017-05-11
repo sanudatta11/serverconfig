@@ -37,6 +37,7 @@ wget https://raw.githubusercontent.com/sanudatta11/serverconfig/master/Dockerfil
 
 echo "Making Docker Images"
 sudo docker build -t testdock .
+sudo service docker restart
 
 echo "Granting Image Permissions"
 sudo chown -R www-data:www-data /var/www
@@ -63,4 +64,5 @@ sudo chmod 0777 /var/www/html/addcode/questions/
 sudo chmod 0777 /var/www/html/globalcontest/questions/
 sudo a2enmod rewrite
 echo "Done Installing and Instance is confugured"
+echo "Reboot your Server for final setup to complete"
 
