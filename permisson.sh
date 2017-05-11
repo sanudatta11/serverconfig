@@ -19,6 +19,6 @@ sudo chgrp -R www-data /var/www/html/
 sudo chmod -R g+w /var/www/html/
 
 echo "Giving Question Save Permissons"
-sudo chmod 0777 /var/www/html/addcode/questions/
-sudo chmod 0777 /var/www/html/globalcontest/questions/
+sudo chmod 0777 /var/www/html/teacher/addcode/questions/
+sudo chmod 0777 /var/www/html/teacher/globalcontest/questions/
 
