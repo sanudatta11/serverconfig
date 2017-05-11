@@ -23,11 +23,6 @@ sudo service docker restart  sudo groupadd docker
 sudo gpasswd -a www-data docker
 sudo service docker restart
 
-echo "Granting Server Permissions"
-sudo chown -R www-data /var/www/html/
-sudo chgrp -R www-data /var/www/html/
-sudo chmod -R g+w /var/www/html/
-
 echo"Pulling Ubuntu Image for Docker"
 sudo  docker pull ubuntu
 
@@ -59,8 +54,6 @@ sudo apt-get install libapache2-mod-log-sq
 sudo apt-get -y install libapache2-mod-qos
 sudo apt-get -y install libapache2-mod-spamhaus
 sudo touch /etc/spamhaus.wl
-sudo chmod 0777 /var/www/html/addcode/questions/
-sudo chmod 0777 /var/www/html/globalcontest/questions/
 sudo a2enmod rewrite
 echo "Done Installing and Instance is confugured"
 echo "Reboot your Server for final setup to complete"
