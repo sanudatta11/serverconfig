@@ -32,7 +32,6 @@ echo"Pulling Ubuntu Image for Docker"
 sudo  docker pull ubuntu
 
 echo "Pulling Initial Dockerfile"
-cd /
 wget https://raw.githubusercontent.com/sanudatta11/serverconfig/master/Dockerfile
 
 echo "Making Docker Images"
